@@ -70,7 +70,7 @@ def ask_question_of_image(
     result = full_output.split(prompt.split()[-1], 1)[-1].strip()
 
     print(result)
-
+    return(result)
 
 def prepare_dataset(dataset_id, split=None, seed=42, subset_size=250):
     """Prepare a dataset for use with LlavaNext.
